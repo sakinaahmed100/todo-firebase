@@ -1,0 +1,137 @@
+.main_home {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    border: 2px dashed #337436;
+    border-radius: 2rem;
+
+}
+
+.heading_home {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #337436;
+    border-radius: 2rem 2rem 0rem 0rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.form {
+    width: 40vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.signupHeading{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 3vh ;
+font-weight: 400;
+font-size: 1.3rem;
+}
+.inputsDiv {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+.name_phone{
+    display: flex;
+    gap: .4rem;
+}
+.input {
+    border: none;
+    border-bottom: 1.5px solid white;
+    width: 20vw;
+    padding: .7rem;
+    background-color: #33743652;
+    color: white;
+
+}
+
+input:focus {
+    transform: scale(.95);
+}
+
+.signUp {
+    border: none;
+    background-color: #337436;
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+}
+
+.signUp:hover {
+    background-color: white;
+    color: #337436;
+}
+.signin{
+    width: 100%;
+    text-align: center;
+}
+.input_div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: .8rem;
+    color: #337436;
+}
+.btn_home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+@media (max-width: 650px) {
+
+    .name_phone {
+        flex-direction: column;
+    }
+    .inputsDiv{
+        gap: .9rem;
+        height: 35vh;
+    }
+    .input {
+        width: 30vw;
+    }
+    .form{
+        align-items: center;
+    }
+
+}
+@media (max-width: 450px) {
+    .input{
+        width: 40vw;
+    }
+}
+@media (max-width: 350px) {
+    .label{
+        display: none;
+    }
+    .inputsDiv{
+    height: 25vh;
+}
+}

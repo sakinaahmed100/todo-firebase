@@ -1,0 +1,296 @@
+.hero{
+    display: grid;
+    place-items: center;
+}
+.container_hero{
+    border-radius: 2rem;
+    border: 1px solid #388E3C;
+    background-color: #bde789;
+    box-shadow: 8px 5px 13px 1px #296e2c;
+    min-height: 80vh;
+    width: 80vw;
+   
+}
+.heading{
+    width: 100%;
+    background: #388E3C;
+    border-radius:2rem 2rem 0rem 0rem ;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 2px 3px 6px 1px #337436;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.list_cross{
+    background-color: #388E3C;
+    position: relative;
+    left: -20vw;
+    width: 70vw;
+}
+.navList{
+    list-style: none;
+}
+.cross{
+    color: white;
+}
+.main{
+    padding: 5vh 3vw;
+    /* min-height: 60vh; */
+    /* background-color: pink; */
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.inputBtn{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 40vw;
+    padding: 1rem 1rem;
+    border-radius: 0.7rem;
+    box-shadow: inset 5px 3px 6px 1px #337436;
+    align-items: flex-end;
+}
+.username,.roll{
+    border: none;
+    background-color: none !important;
+    border-bottom: 1px solid #296e2c;
+    width: 30vw;
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.username:focus,.roll:focus, input:focus{
+outline: none;
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+    width: 30vw;
+    
+}
+
+.add,.dltAll,.update{
+    border: none;
+    color: #9CCC65;
+    background-color: white;
+    /* padding: .5rem; */
+    font-size: 1.5rem;
+    
+}
+.dltAll{
+    border-radius: .5rem;
+    display: flex;
+    place-items: center;
+    padding: .4rem;
+    box-shadow: inset 2px 3px 6px 1px #68bd6c;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.add:hover{
+    color: #296e2c;
+}
+.dltAll:hover,.delete:hover{
+    color: red;
+}
+
+.navBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.hamBurger{
+    display: none;
+}
+.profile,.logOut{
+    padding: .5rem;
+    border-radius: .5rem;
+    color: #296e2c;
+    background-color:white ;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.profile{
+    background-color:#388E3C;
+    color: white;
+    font-size: 2rem;
+
+}
+.logOut{
+    box-shadow: 1px 1px 7px 1px #34443498;
+    transition: transform 0.3s ease;
+
+}
+.logOut:hover{
+    color: white;
+    background-color:#68bd6c;
+
+}
+.profile:hover,.logOut:hover{
+    transform: scale3d(1.1, 1.1, 1);
+
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    padding: 1rem 0rem;
+}
+.user_display{
+    color: white;
+    font-weight: 500;
+}
+.userName{
+color: #296e2c;
+}
+.noData div{
+    text-align: center;
+    padding: 5vh 0vw;
+    font-size: larger;
+    color: rgb(141, 137, 137);
+}
+.empty{
+    color: red;
+}
+.card{
+    border: 1px solid white;
+    padding: .7rem;
+    font-size: 1rem;
+    background-color: white;
+    box-shadow: inset 3px 2px 6px 1px #337436;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btns{
+    display: flex;
+    gap: .5rem;
+}
+.edit,.delete{
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    display:flex;
+    color: #296e2c;
+
+}
+.title,.detail{
+    border: none;
+}
+.title{
+    font-size: 1.2rem;
+    color: rgb(97, 96, 96);
+
+}
+
+.detail{
+    font-size: 1rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.edit:hover,.update:hover{
+    color: #388E3C;
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+   .container{
+    width: 55vw;
+   }
+    .list {
+        grid-template-columns: repeat(1,1fr);
+    gap: 1.5rem;
+    }
+    .heading,.logOut{
+
+        font-size: .8rem;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+    .container{
+        width: 60vw;
+       }
+
+       .heading,.logOut{
+        font-size: .7rem;
+    }
+    .list {
+        grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    }
+    .inputBtn{
+        width: 50vw;
+    }
+    .username,.roll{
+        width: 38vw;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+    width: 70vw;
+}
+    .navBtn{
+        display: none;
+    }
+    .hamBurger{
+        display: flex;
+        font-size: 1.5rem;
+    }
+   
+    .logOut{
+        background-color: #388E3C;
+        box-shadow: none;
+    }
+       .heading{
+        font-size: .7rem;
+    }
+    .list {
+        grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    }
+    .inputBtn{
+        width: 65vw;
+        flex-direction: column;
+    }
+    .username,.roll{
+        width: 55vw;
+        height: 5vh;
+    }
+
+}
+@media (max-width: 380px) {
+    .list_cross{
+        left: -26vw;
+        width: 60vw;
+    }
+}
+
+@media(max-width:300px){
+    .list_cross{
+        left: -33vw;
+        width: 65vw;
+    }
+}
